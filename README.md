@@ -2,7 +2,7 @@
 
 ![Logo](./2acca1b1-708b-4d28-99dd-17ae0a20040f.png) 
 
-MyBooks adalah repository pribadi yang berisi koleksi eBook dalam format PDF. Repository ini mencakup berbagai topik, mulai dari **Cybersecurity**, **Pemrograman**, hingga berbagai buku lainnya yang dapat membantu memperkaya pengetahuan Anda di berbagai bidang.
+MyBooks adalah repository yang berisi koleksi eBook dalam format PDF. Repository ini mencakup berbagai topik, mulai dari **Cybersecurity**, **Pemrograman**, hingga berbagai buku lainnya yang dapat membantu memperkaya pengetahuan Anda di berbagai bidang.
 
 ## Daftar Isi
 
