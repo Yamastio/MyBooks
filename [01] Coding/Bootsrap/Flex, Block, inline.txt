@@ -1,0 +1,4 @@
+Block ---> Memulai baris baru dan mengambil seluruh lebar container. Digunakan untuk elemen layout besar.
+Inline ---> Tidak memulai baris baru dan hanya mengambil ruangan yang diperlukan. Digunakan untuk teks dan elemen dalam baris.
+Flex ---> Membuat flex container yang mengatur anak-anaknya dengan model flexbox. Digunakan untuk membuat layout yang fleksibel dan responsif.
+

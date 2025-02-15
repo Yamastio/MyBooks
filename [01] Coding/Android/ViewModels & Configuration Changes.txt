@@ -1,0 +1,28 @@
+MVVM --> model view view model
+
+------------------------------
+| view -- view model -- Model|
+------------------------------
+
+Ket:
+view = UI APP kita
+Model = App data list
+View Model = Jembatan antara View dan Model kita
+
+
+contoh: Ketika kita buat aplikasi daftar kontak, dan Model itu adalah tempat kita menyimpan database nya
+
+Secara singkat view model 
+
+
+1. Buat class viewModel
+2. Inisiasikan sebagai view model dengan cara extends dari view model
+
+: ViewModel() {
+
+
+3. Instansiasikan ke main activity dengan cara pemanggilan view model
+
+private val <nama_variable> by viewModels<nama_view_model_class_kita>()
+
+

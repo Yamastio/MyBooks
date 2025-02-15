@@ -1,0 +1,41 @@
+Activity
+Apa itu activity?
+--Activity adalah salah satu fundamental dalam pemrograman android, activity merupakan tampilan layar atau antar muka dapat berinteraksi dengan pengguna.
+
+Main Activity?
+--Jika kalian sudah belajar java/kotlin, main disini sama seperti function main di bahasa pemrograman tersebut, main disini sebagai pintu gerbang, sebagai antar muka/layar yang akan dilihat pengguna ketika pertama kali dipanggil.
+
+Android Lifecycle
+Apa itu android lifecycle?
+--Android lifecycle adalah rangkaian status dalam suatu activity dari dibuat sampai dihancurkan
+
+onCreate()
+--Method ini dipanggil saat activity pertama kali dibuat
+--Disini user belum melihat tampilan layarnya
+
+onStart()
+--Method ini dipanggil saat activity menjadi terlihat oleh pengguna
+--User dapat melihat tapi tidak belum bisa menjalankan fungsi nya, maksudnya ketika kalian membuat tombol di onCreate maka user sebatas melihat tampilan tombolnya saja, fungsi click di tombol belum befungsi(belum dapat menerima input)
+
+onResume()
+--Method ini dipanggil saat activity bisa berinteraksi penuh dengan pengguna
+--Tombol bisa di klik(bisa menerima input dari pengguna)
+
+onPause()
+--Method ini dipanggil saat activity berhenti, tapi masih terlihat oleh pengguna
+--Contoh ketika kalian klik tombol dan muncul sebuah dialog, maka activity akan berhenti tapi masih terlihat oleh pengguna
+--Contoh lain ketika di minimize aplikasinya, maka akan di state onPause()
+--Ini adalah waktu yang tepat untuk menyimpan data sementara atau menghentikan animasi yang sedang berjalan.
+
+onStop()
+--Method ini dipanggil saat activity sudah berhenti dan tidak terlihat oleh pengguna
+--Contoh ketika kita kembali ke background, tidak hanya di minimize saja tampilan sudah tidak terlihat sama sekali oleh userr
+
+onRestart()
+--Method ini dipanggil saat activity kembali dibuka, setelah dari state onStop()
+--Saat onRestart() maka akan memulai activity dari onRestart() --> onStart() --> onResume()
+
+onDestroy()
+--Method yang dipanggil saat activity benar benar dihentikan, sudah tidak berjalan di latar belakang.
+--Contoh: ketika user kembali dan membuka aplikasi recent tasks dan menghapus aplikasi dari daftar.
+--Saat onDestroy() maka saat user membuka akan dimulai dari onCreate() bukan dari onStart()

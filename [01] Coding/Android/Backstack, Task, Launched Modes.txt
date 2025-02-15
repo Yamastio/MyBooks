@@ -1,0 +1,21 @@
+Backstack 
+--Ketika membuka screen baru, maka akan ada screen yang tertumpuk
+
+Task
+--Represent collection of all activity(Screen) that belong together
+
+
+----------------------------------
+-	New BookmarkScreen	-
+-	BookmarkScreen		-
+-	Browser Screen		-	
+-				-
+----------------------------------
+Browser task
+
+
+Launched Modes == bagaimana screen dijalankan pertama kali
+--Standard --> ada link dari instagram dan buka maka browser akan buka dan menimpa screen tersebut, saat dikembalikan maka akan ke halaman browser sebelumnya
+--Single Top --> Link itu hanya mengirimkan ke screen yang sudah aktif, tidak ada perubahan
+--Single Task --> Link dari aplikasi lain akan dibuka di task yang lain, dibuka di tab baru jika di chrome. Dan ini ketika kembali akan ke instagram
+--Single Instance --> Hampir sama dengan single task, akan di run di task yang berbeda adalah aktivitas tersebut terisolasi(contoh dalam payment app). Tidak mengizinkan run aktivitas lainya, hanya 1 aktivitas(screen itu saja)
